@@ -12,7 +12,7 @@ export const connectWithSocketServer = () => {
   //socket = io("http://localhost:3003");
   //realtime-whiteboard-backend.onrender.com
 
-  socket = io("http://realtime-whiteboard-backend.onrender.com/");
+  socket = io("https://realtime-whiteboard-backend.onrender.com/");
 
   socket.on("connect", () => {
     console.log("connected to socket.io server");
