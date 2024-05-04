@@ -9,8 +9,11 @@ import { setElements, updateElement } from "../Whiteboard/whiteboardSlice";
 let socket;
 
 export const connectWithSocketServer = () => {
-  socket = io("http://localhost:3003");
+  //socket = io("http://localhost:3003");
+  //realtime-whiteboard-backend.onrender.com
 
+  socket = io("http://realtime-whiteboard-backend.onrender.com");
+  
   socket.on("connect", () => {
     console.log("connected to socket.io server");
   });
